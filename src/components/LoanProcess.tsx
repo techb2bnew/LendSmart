@@ -36,7 +36,7 @@ const steps = [
 
 export default function LoanProcess() {
   return (
-    <section className="bg-white pb-20 overflow-hidden">
+    <section className="bg-white pb-2 lg:pb-20 overflow-hidden">
       <div className="page-container sm:px-6 lg:px-8">
         {/* heading */}
         <div className="mx-auto max-w-[100%] text-center">
@@ -110,7 +110,7 @@ export default function LoanProcess() {
                     }`}
                 >
                   <div
-                    className={`relative flex min-h-[220px] w-full max-w-[200px] flex-col items-center px-4 pt-9 pb-6 text-center sm:min-h-[232px] sm:max-w-[172px] sm:px-5 sm:pt-10 sm:pb-7 ${isActive ? "bg-[#4a8f17] text-white" : "bg-[#f3f3f3] text-black"
+                    className={`relative flex min-h-[220px] w-full max-w-[200px] flex-col items-center px-4 pt-9 pb-6 text-center sm:min-h-[232px] sm:max-w-[172px] sm:px-5 sm:pt-10 sm:pb-7 ${isActive ? "bg-linear-to-b from-[#509D1C] to-[#325918] text-white" : "bg-[#f3f3f3] text-black"
                       }`}
                     style={{
                       borderRadius: "999px",

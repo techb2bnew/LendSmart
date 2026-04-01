@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="page-container pt-10 sm:pt-14 lg:pt-16 relative z-20 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] items-start gap-10 lg:gap-6">
           {/* left content */}
-          <div className="lg:pl-12 xl:pl-12 pt-6 lg:pt-10">
+          <div className="  pt-6 lg:pt-10">
             <h1 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[40px] font-extrabold leading-[1.08] tracking-[-0.02em] text-[#222222]">
               Smart <span className="text-[#84c441]">Loan</span> Solutions for
               <br />
@@ -74,7 +74,7 @@ export default function Hero() {
               before:content-['']"
           >
             <div className="relative z-10 w-full overflow-hidden rounded-[14px] shadow-[0_16px_35px_rgba(0,0,0,0.14)]">
-              <div className="relative h-[200px] w-full min-h-[180px] sm:h-[300px] md:h-[360px] lg:h-[430px]">
+              <div className="relative h-[200px] w-full min-h-[180px] sm:h-[300px] md:h-[360px] lg:h-[530px]">
                 <Image
                   src="/hero-banner.png"
                   alt="Hero banner"

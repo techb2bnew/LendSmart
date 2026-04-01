@@ -113,7 +113,7 @@ export default function Footer() {
       </div>
 
       {/* Main footer */}
-      <div className="relative px-4 pb-8 pt-10 lg:pb-10 lg:pt-12">
+      <div className="relative px-4 lg:px-0 pb-8 pt-10 lg:pb-10 lg:pt-12">
         <div className="w-full sm:px-6 lg:page-container lg:px-8">
           <div className="grid grid-cols-1 gap-0 lg:grid-cols-[1.35fr_0.55fr_0.7fr_0.55fr_0.75fr] lg:gap-8">
             {/* Brand — always expanded */}
@@ -239,7 +239,7 @@ export default function Footer() {
           </div>
 
           {/* Bottom right image */}
-          <div className="pointer-events-none mt-8 flex justify-end lg:absolute lg:bottom-[54px] lg:right-0 lg:mt-0">
+          <div className="pointer-events-none mt-8   justify-end lg:absolute lg:bottom-[54px] lg:right-0 lg:mt-0 hidden lg:flex">
             <div className="relative h-[180px] w-[200px] sm:h-[220px] sm:w-[250px] lg:h-[230px] lg:w-[280px]">
               <Image
                 src="/house-loan-footer.png"
@@ -250,7 +250,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="mt-8 h-px w-full bg-[#d7dfca]" />
+          <div className="mt-8 h-px w-full bg-[#d7dfca] hidden lg:flex" />
 
           {/* Bottom row */}
           <div className="flex flex-col gap-3 pt-6 text-[14px] text-[#555] lg:flex-row lg:items-center lg:justify-between">

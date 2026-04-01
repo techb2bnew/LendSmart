@@ -59,8 +59,8 @@ export default function LoanServices() {
   const activeService = services.find((service) => service.id === activeId);
 
   return (
-    <section id="services" className="relative z-10 -mt-10 sm:-mt-12 lg:-mt-14">
-      <div className="page-container rounded-[12px] bg-[#171717] py-7 shadow-[0_18px_40px_rgba(0,0,0,0.18)] sm:px-8 sm:py-8 lg:px-10 lg:py-10">
+    <section id="services" className="relative z-10 -mt-10 sm:-mt-12 lg:-mt-14 sm:px-6 lg:px-8">
+      <div className="page-container rounded-[12px] bg-[#171717] py-7 shadow-[0_18px_40px_rgba(0,0,0,0.18)] sm:px-8 sm:py-8 lg:px-10 lg:py-10 ">
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,300px)_minmax(0,1fr)] lg:gap-10 xl:grid-cols-[minmax(0,320px)_minmax(0,1fr)]">
           {/* Left image */}
           <div className="flex justify-center lg:justify-start">

@@ -73,7 +73,7 @@ export default function Testimonials() {
                   key={`${item.name}-${index}-${active}`}
                   className={`group rounded-[14px] border p-6 transition-all duration-300 ${
                     index === 0
-                      ? "border-[#66b11f] bg-gradient-to-r from-[#5aa417] to-[#2f5f0d]"
+                      ? "border-[#66b11f] bg-gradient-to-b from-[#509D1C] to-[#325918]"
                       : "border-[#474747] bg-[#1E1E1E] hover:border-[#66b11f] hover:bg-gradient-to-r hover:from-[#5aa417] hover:to-[#2f5f0d]"
                   }`}
                 >
