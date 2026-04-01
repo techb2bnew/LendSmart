@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-green-primary: #2d6a1f;
+  --color-green-dark: #1e4d13;
+  --color-green-light: #4a9e2f;
+  --color-green-accent: #5dbf38;
+  --color-green-bg: #f0f7ec;
+  --color-green-mint: #e8f5e1;
+  --color-dark-bg: #1a1a1a;
+  --color-dark-card: #2a2a2a;
+  --color-text-dark: #1a2e0f;
+  --color-text-gray: #555555;
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --radius-card: 16px;
+  --radius-btn: 8px;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  body {
+    overflow-x: clip;
+    font-family: var(--font-body);
+    color: #1a2e0f;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+}
+
+/* Centered ~80% content column (design reference); section backgrounds remain full viewport width */
+@utility page-container {
+  margin-inline: auto;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: calc(100% - 1.5rem);
+  padding-inline: clamp(0.75rem, 2.5vw, 2rem);
+}
+
+@layer utilities {
+  .text-green-primary { color: var(--color-green-primary); }
+  .text-green-accent { color: var(--color-green-accent); }
+  .bg-green-primary { background-color: var(--color-green-primary); }
+  .bg-green-dark { background-color: var(--color-green-dark); }
+  .bg-green-light { background-color: var(--color-green-light); }
+  .bg-green-bg { background-color: var(--color-green-bg); }
+  .bg-green-mint { background-color: var(--color-green-mint); }
+  .bg-dark-bg { background-color: var(--color-dark-bg); }
+  .bg-dark-card { background-color: var(--color-dark-card); }
+  .border-green-primary { border-color: var(--color-green-primary); }
+  .border-green-accent { border-color: var(--color-green-accent); }
+}
