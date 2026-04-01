@@ -40,12 +40,16 @@ export default function LendSmartHeader() {
           <div className="hidden items-center divide-x divide-gray-300 md:flex">
             <div className="flex items-center gap-2 pr-4 lg:pr-5">
               <Mail size={12} className="shrink-0 text-gray-700" />
-              <span className="truncate">bharat@lendsmart.com.au</span>
+              <a href="mailto:bharat@lendsmart.com.au" className="truncate hover:underline">
+                bharat@lendsmart.com.au
+              </a>
             </div>
 
             <div className="flex items-center gap-2 px-4 lg:px-5">
               <Mail size={12} className="shrink-0 text-gray-700" />
-              <span className="truncate">v.admin@lendsmart.com.au</span>
+              <a href="mailto:v.admin@lendsmart.com.au" className="truncate hover:underline">
+                v.admin@lendsmart.com.au
+              </a>
             </div>
 
             <div className="hidden items-center gap-2 px-4 lg:flex lg:px-5">
@@ -55,13 +59,17 @@ export default function LendSmartHeader() {
 
             <div className="hidden items-center gap-2 pl-4 lg:flex lg:pl-5">
               <Phone size={12} className="shrink-0 text-gray-700" />
-              <span className="whitespace-nowrap">Call 0413 206 624</span>
+              <a href="tel:+61413206624" className="whitespace-nowrap hover:underline">
+                Call 0413 206 624
+              </a>
             </div>
           </div>
 
           <div className="flex items-center gap-2 md:hidden">
             <Phone size={12} className="shrink-0" />
-            <span className="font-medium">0413 206 624</span>
+            <a href="tel:+61413206624" className="font-medium hover:underline">
+              0413 206 624
+            </a>
           </div>
 
           <div className="flex shrink-0 items-center gap-3 text-black sm:gap-4">
