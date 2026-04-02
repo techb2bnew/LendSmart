@@ -1,4 +1,7 @@
-@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @theme {
   --color-green-primary: #2d6a1f;
@@ -46,7 +49,7 @@
 }
 
 /* Centered ~80% content column (design reference); section backgrounds remain full viewport width */
-@utility page-container {
+.page-container {
   margin-inline: auto;
   box-sizing: border-box;
   width: 80%;
