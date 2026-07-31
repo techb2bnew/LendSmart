@@ -12,6 +12,7 @@ const pages = [
   "/privacy-policy",
   "/residential-loans",
   "/terms-conditions",
+  
 ];
 
 export async function GET() {
