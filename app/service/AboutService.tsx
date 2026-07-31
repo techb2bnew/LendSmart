@@ -118,7 +118,7 @@ export default function AboutService({
             ) : null}
 
             <div className="mt-4 flex max-w-[500px] flex-col gap-4 sm:mt-6 sm:flex-row sm:items-center sm:justify-between md:gap-6">
-              {showClients && clientImages.length > 0 ? (
+              {/* {showClients && clientImages.length > 0 ? (
                 <div className="flex items-center gap-2 sm:gap-3">
                   <div className="flex -space-x-2">
                     {clientImages.slice(0, 3).map((ref, index) => (
@@ -142,7 +142,7 @@ export default function AboutService({
                     <div className="whitespace-nowrap">{clientCountLabel}</div>
                   </div>
                 </div>
-              ) : null}
+              ) : null} */}
 
               {showCTA && ctaText && ctaLink ? (
                 <Link
