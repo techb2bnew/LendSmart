@@ -79,20 +79,28 @@ export default function LoanProcess({
 
         {/* steps */}
         <div className="relative mt-12 lg:mt-14">
-          {/* dashed connectors desktop */}
-          <div className="pointer-events-none absolute left-0 right-0 top-[70px] hidden lg:block">
-            <svg className="h-[60px] w-full"viewBox="0 0 1200 90"preserveAspectRatio="none">
-              <polyline points="170,58 225,52 280,48"stroke="#8e8e8e"strokeWidth="1.4"strokeDasharray="3 6"fill="none"strokeLinecap="round"strokeLinejoin="round"/>
-              <polyline points="390,48 480,70 570,78"stroke="#8e8e8e"strokeWidth="1.4"strokeDasharray="3 6"fill="none"strokeLinecap="round"strokeLinejoin="round"/>
-              <polyline points="630,78 700,52 770,46" stroke="#8e8e8e" strokeWidth="1.4"strokeDasharray="3 6"fill="none"strokeLinecap="round"strokeLinejoin="round"/>
-              <polyline points="850,46 955,66 1060,72" stroke="#8e8e8e"strokeWidth="1.4" strokeDasharray="3 6"fill="none"strokeLinecap="round"strokeLinejoin="round"/>
-            </svg>
-          </div>
+          {/* dashed connectors desktop — tuned for exactly 5 steps */}
+          {steps.length === 5 && (
+            <div className="pointer-events-none absolute left-0 right-0 top-[70px] hidden lg:block">
+              <svg className="h-[60px] w-full"viewBox="0 0 1200 90"preserveAspectRatio="none">
+                <polyline points="170,58 225,52 280,48"stroke="#8e8e8e"strokeWidth="1.4"strokeDasharray="3 6"fill="none"strokeLinecap="round"strokeLinejoin="round"/>
+                <polyline points="390,48 480,70 570,78"stroke="#8e8e8e"strokeWidth="1.4"strokeDasharray="3 6"fill="none"strokeLinecap="round"strokeLinejoin="round"/>
+                <polyline points="630,78 700,52 770,46" stroke="#8e8e8e" strokeWidth="1.4"strokeDasharray="3 6"fill="none"strokeLinecap="round"strokeLinejoin="round"/>
+                <polyline points="850,46 955,66 1060,72" stroke="#8e8e8e"strokeWidth="1.4" strokeDasharray="3 6"fill="none"strokeLinecap="round"strokeLinejoin="round"/>
+              </svg>
+            </div>
+          )}
 
-          <div className="relative z-10 grid grid-cols-1 p-2 gap-6 sm:grid-cols-2 lg:grid-cols-5 lg:gap-4">
+          <div
+            className={
+              steps.length === 5
+                ? "relative z-10 grid grid-cols-1 p-2 gap-6 sm:grid-cols-2 lg:grid-cols-5 lg:gap-4"
+                : "relative z-10 flex flex-wrap justify-center gap-6 p-2 lg:gap-4"
+            }
+          >
             {steps.map((step, index) => {
               const isActive = !!step.active;
-              const moveUpCard = index === 1 || index === 3;
+              const moveUpCard = steps.length === 5 && (index === 1 || index === 3);
 
               return (
                 <div key={step.num} className={`relative flex justify-center ${moveUpCard ? "lg:top-[-30px]" : ""}`}>
